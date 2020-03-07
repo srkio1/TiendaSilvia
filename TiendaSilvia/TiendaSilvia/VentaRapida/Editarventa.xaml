@@ -4,7 +4,7 @@
              x:Class="TiendaSilvia.VentaRapida.Editarventa"
              Title="Modificar" Padding="5">
     <ContentPage.Content>
-        <StackLayout Padding="10">
+        <StackLayout Padding="9">
             <StackLayout>
                 <Label x:Name="txtid" Text="id" IsVisible="False"/>
                 <Label Text="Fecha: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
