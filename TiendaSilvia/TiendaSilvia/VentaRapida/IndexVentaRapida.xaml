@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaSilvia.VentaRapida.IndexVentaRapida">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <Image Source="pagando.jpg" VerticalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="200" Aspect="AspectFill"></Image>
+                    <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+                        <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical">
+                            <Button Text="AGREGAR VENTA" TextColor="Black" FontAttributes="Bold" FontSize="Large" BackgroundColor="White" Clicked="Button_Clicked_5"/>
+                        </StackLayout>
+                    </StackLayout>
+                </AbsoluteLayout>
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <Image Source="lista_diaria.jpg" VerticalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="200" Aspect="AspectFill"></Image>
+                    <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+                        <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical">
+                            <Button Text="VENTA DIARIA" TextColor="Black" FontAttributes="Bold" FontSize="Large" BackgroundColor="White" Clicked="Button_Clicked_4"/>
+                        </StackLayout>
+                    </StackLayout>
+                </AbsoluteLayout>
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <Image Source="calendario.jpg" VerticalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="200" Aspect="AspectFill"></Image>
+                    <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+                        <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  >
+                            <Button Text="CALENDARIO" TextColor="Black" FontAttributes="Bold" FontSize="Large" BackgroundColor="White" Clicked="Button_Clicked_3"/>
+                        </StackLayout>
+                    </StackLayout>
+                </AbsoluteLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

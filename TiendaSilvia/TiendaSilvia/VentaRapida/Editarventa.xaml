@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaSilvia.VentaRapida.Editarventa"
+             Title="Modificar" Padding="5">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <StackLayout>
+                <Label x:Name="txtid" Text="id" IsVisible="False"/>
+                <Label Text="Fecha: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <DatePicker x:Name="pickFecha" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Cantidad: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Entry x:Name="txtCantidad" Text="1" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Cantidad..." Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Producto: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Editor x:Name="txtDescripion" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Descripcion..."/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Bs.: " TextColor="Black" Font="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Entry x:Name="txtMonto" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Monto..." Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                <Button Text="Editar" HorizontalOptions="Start"  TextColor="Black" BackgroundColor="Orange" 
+                            BorderWidth="3" BorderColor="Black" CornerRadius="10" Clicked="Button_Clicked_1"></Button>
+                <Button Text="Borrar" HorizontalOptions="End"  TextColor="Black" BackgroundColor="Orange" 
+                            BorderWidth="3" BorderColor="Black" CornerRadius="10" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

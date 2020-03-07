@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaSilvia.VentaRapida.AgregarVentaRapida">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <StackLayout Padding="0, 20, 0, 20">
+                    <Label Text="AGREGAR VENTA RAPIDA" TextColor="Black" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand" FontAttributes="Bold" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Fecha: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <DatePicker x:Name="pickFecha" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Cantidad: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Entry x:Name="txtCantidad" Text="1" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Cantidad..." Keyboard="Numeric"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Producto: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Editor x:Name="txtDescripion" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Descripcion..."/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Bs.: " TextColor="Black" Font="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Entry x:Name="txtMonto" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Monto..." Keyboard="Numeric"/>
+                </StackLayout>
+                <StackLayout Padding="0, 40, 0, 0">
+                    <Button x:Name="btnGuardar" Text="GUARDAR" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" BackgroundColor="Green"
+                            TextColor="Black" BorderRadius="10" BorderWidth="2" WidthRequest="200" Clicked="BtnGuardar_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

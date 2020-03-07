@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaSilvia.VentaRapida.ListaFecha">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="20">
+                    <Label Text="BUSCAR FECHA" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout>
+                    <DatePicker x:Name="ofecha" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" DateSelected="ofecha_DateSelected"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout BackgroundColor="Orange" Padding="0">
+                        <StackLayout>
+                            <Label x:Name="txtFecha" TextColor="White" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5, 0, 5, 0">
+                            <Label Text="Total: " TextColor="White" FontSize="Medium" VerticalOptions="Center"/>
+                            <Label x:Name="txtTotal" TextColor="White" FontSize="Medium" VerticalOptions="Center"/>
+                            <Label Text="Bs." TextColor="White" FontSize="Medium" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="#0F5BCB" Padding="0">
+                        <Label Text="Cantidad" FontSize="Medium" Padding="30, 5, 5, 5" HorizontalOptions="StartAndExpand" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="Producto" FontSize="Medium" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="BS." FontSize="Medium" Padding="5, 5, 30, 5" HorizontalOptions="EndAndExpand" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout Padding="5, 0, 5, 0">
+                        <ScrollView>
+                            <ListView x:Name="listVentaRapida" RowHeight="20" BackgroundColor="Transparent" HasUnevenRows="True" SeparatorVisibility="None" ItemTapped="ListVentaRapida_ItemTapped">
+                                <ListView.ItemTemplate  >
+                                    <DataTemplate>
+                                        <ViewCell >
+                                            <Frame CornerRadius="5" HasShadow="True" Margin="5">
+                                                <Grid Padding="5" BackgroundColor="White">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="15"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="20"></ColumnDefinition>
+                                                        <ColumnDefinition Width="80"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Text="{Binding cantidad}" FontSize="Small" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                                    <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Text="{Binding detalle_cantidad}" Padding="0, 0, 30, 0" FontSize="Small" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                                    <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Text="{Binding producto}" FontSize="Small" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                                                    <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="3" Text="{Binding monto}" FontSize="Small" TextColor="Black" HorizontalOptions="End"  VerticalOptions="Center"/>
+                                                </Grid>
+                                            </Frame>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

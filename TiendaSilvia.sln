@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaSilvia.Android", "TiendaSilvia\TiendaSilvia.Android\TiendaSilvia.Android.csproj", "{B1A36F5C-6BAE-4971-927A-515F59293AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaSilvia", "TiendaSilvia\TiendaSilvia\TiendaSilvia.csproj", "{D5F100EF-24D7-4648-B835-CA1E45186701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A36F5C-6BAE-4971-927A-515F59293AF8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F100EF-24D7-4648-B835-CA1E45186701}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4311D70D-BF6B-4460-AF06-220338B5F4E4}
+	EndGlobalSection
+EndGlobal
