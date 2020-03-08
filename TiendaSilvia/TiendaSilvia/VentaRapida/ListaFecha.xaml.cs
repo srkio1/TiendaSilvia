@@ -26,7 +26,12 @@ namespace TiendaSilvia.VentaRapida
         {
             InitializeComponent();
 
-
+          
+        }
+        protected override void OnAppearing()
+        {
+            ventas_rapidas.Clear();
+            TotalDiario = 0;
             ObtenerTotal();
             ObtenerLista();
         }

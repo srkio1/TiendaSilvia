@@ -198,7 +198,7 @@
                         <Label x:Name="txtTotalEnero" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficos" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficos_Clicked"/>
+                        <Button x:Name="btnGraficos" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficos_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -398,9 +398,9 @@
                         <Label Text="TOTAL MES: " TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
                         <Label x:Name="txtTotalFebrero" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
-                </StackLayout>
-                <StackLayout Padding="20">
-                    <Button x:Name="btnGraficosFeb" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosFeb_Clicked"/>
+                    <StackLayout Padding="20">
+                        <Button x:Name="btnGraficosFeb" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosFeb_Clicked"/>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
@@ -601,7 +601,7 @@
                         <Label x:Name="txtTotalMarzo" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosMarzo" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosMarzo_Clicked"/>
+                        <Button x:Name="btnGraficosMarzo" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosMarzo_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -796,12 +796,14 @@
                         </StackLayout>
                     </Grid>
                 </StackLayout>
-                <StackLayout BackgroundColor="White" HorizontalOptions="Center" Padding="20">
-                    <Label Text="TOTAL MES: " TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
-                    <Label x:Name="txtTotalAbril" FontSize="Medium" TextColor="Green"/>
-                </StackLayout>
-                <StackLayout Padding="20">
-                    <Button x:Name="btnGraficosAbril" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosAbril_Clicked"/>
+                <StackLayout BackgroundColor="White">
+                    <StackLayout BackgroundColor="White" HorizontalOptions="Center" Padding="20">
+                        <Label Text="TOTAL MES: " TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label x:Name="txtTotalAbril" FontSize="Medium" TextColor="Green"/>
+                    </StackLayout>
+                    <StackLayout Padding="20">
+                        <Button x:Name="btnGraficosAbril" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosAbril_Clicked"/>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
@@ -1000,9 +1002,9 @@
                         <Label Text="TOTAL MES: " TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
                         <Label x:Name="txtTotalMayo" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
-                </StackLayout>
-                <StackLayout Padding="20">
-                    <Button x:Name="btnGraficosMayo" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosMayo_Clicked"/>
+                    <StackLayout Padding="20">
+                        <Button x:Name="btnGraficosMayo" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosMayo_Clicked"/>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
@@ -1202,7 +1204,7 @@
                         <Label x:Name="txtTotalJunio" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosJunio" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosJunio_Clicked"/>
+                        <Button x:Name="btnGraficosJunio" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosJunio_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -1403,7 +1405,7 @@
                         <Label x:Name="txtTotalJulio" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosJulio" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosJulio_Clicked"/>
+                        <Button x:Name="btnGraficosJulio" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosJulio_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -1611,9 +1613,9 @@
                         <Label Text="TOTAL MES: " TextColor="Black" FontAttributes="Bold" FontSize="Medium"/>
                         <Label x:Name="txtTotalAgosto" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
-                </StackLayout>
-                <StackLayout Padding="20">
-                    <Button x:Name="btnGraficosAgosto" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosAgosto_Clicked"/>
+                    <StackLayout Padding="20">
+                        <Button x:Name="btnGraficosAgosto" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosAgosto_Clicked"/>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
@@ -1813,7 +1815,7 @@
                         <Label x:Name="txtTotalSeptiembre" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosSep" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosSep_Clicked"/>
+                        <Button x:Name="btnGraficosSep" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosSep_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -2014,7 +2016,7 @@
                         <Label x:Name="txtTotalOctubre" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosOctubre" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosOctubre_Clicked"/>
+                        <Button x:Name="btnGraficosOctubre" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosOctubre_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -2223,7 +2225,7 @@
                         <Label x:Name="txtTotalNoviembre" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosNoviembre" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosNoviembre_Clicked"/>
+                        <Button x:Name="btnGraficosNoviembre" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosNoviembre_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -2428,7 +2430,7 @@
                         <Label x:Name="txtTotal2020" FontSize="Medium" TextColor="Green"/>
                     </StackLayout>
                     <StackLayout Padding="20">
-                        <Button x:Name="btnGraficosDiciembre" Text="Graficos?" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosDiciembre_Clicked"/>
+                        <Button x:Name="btnGraficosDiciembre" Text="Graficos" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" TextColor="White"  Clicked="BtnGraficosDiciembre_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

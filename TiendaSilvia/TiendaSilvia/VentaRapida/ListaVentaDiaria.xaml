@@ -24,7 +24,7 @@
             </StackLayout>
             <StackLayout Padding="5, 0, 5, 0">
                 <ScrollView>
-                    <ListView x:Name="listVentaRapida" RowHeight="20" BackgroundColor="Transparent" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView x:Name="listVentaRapida" RowHeight="20" BackgroundColor="Transparent" HasUnevenRows="True" SeparatorVisibility="None" ItemTapped="ListVentaRapida_ItemTapped">
                         <ListView.ItemTemplate  >
                             <DataTemplate>
                                 <ViewCell >

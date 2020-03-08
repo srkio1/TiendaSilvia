@@ -34,13 +34,14 @@ namespace TiendaSilvia.VentasMes
         public CalendarioVenta()
         {
             InitializeComponent();
+            GetDataEnero();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
             MessagingCenter.Send(this, "AllowLandscape");
-            GetDataEnero();
+            
         }
 
         private decimal[] EneroArr = new decimal[500];

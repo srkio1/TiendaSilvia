@@ -82,6 +82,13 @@ namespace TiendaSilvia.VentaRapida
                 await DisplayAlert("ERROR", erro.ToString(), "OK");
             }
         }
+        private void ListVentaRapida_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            ventas_rapidas.Clear();
+            ObtenerLista();
+            var pasardatos = e.Item as venta_rapida;
+            listVentaRapida.SelectedItem = Navigation.PushAsync(new Editarventa(pasardatos.id_venta_rapida, pasardatos.fecha, pasardatos.cantidad, pasardatos.detalle_cantidad, pasardatos.monto, pasardatos.producto));
+        }
 
     }
 }
