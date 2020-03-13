@@ -15,7 +15,8 @@ namespace TiendaSilvia.VentaRapida
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AgregarVentaRapida : ContentPage
 	{
-		public AgregarVentaRapida ()
+        
+        public AgregarVentaRapida ()
 		{
 			InitializeComponent ();
 		}
@@ -24,42 +25,55 @@ namespace TiendaSilvia.VentaRapida
         {
             if(pickFecha != null)
             {
-                if(txtMonto.Text != null)
+                if (txtDescripion.Text.Length > 0)
                 {
-                    try
+                    if (txtCantidad.Text != null)
                     {
-                        venta_rapida venta_ = new venta_rapida()
+                        if (txtMonto.Text != null)
                         {
-                            fecha = pickFecha.Date,
-                            producto = txtDescripion.Text,
-                            cantidad = Convert.ToInt32(txtCantidad.Text),
-                            detalle_cantidad = "Unidad",
-                            monto = Convert.ToDecimal(txtMonto.Text)
-                        };
-                        var json = JsonConvert.SerializeObject(venta_);
-                        var content = new StringContent(json, Encoding.UTF8, "application/json");
-                        HttpClient client = new HttpClient();
-                        var result = await client.PostAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/agregarVentaRapida.php", content);
+                            try
+                            {
+                                venta_rapida venta_ = new venta_rapida()
+                                {
+                                    fecha = pickFecha.Date,
+                                    producto = txtDescripion.Text,
+                                    cantidad = Convert.ToInt32(txtCantidad.Text),
+                                    monto = Convert.ToDecimal(txtMonto.Text)
+                                };
+                                var json = JsonConvert.SerializeObject(venta_);
+                                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                                HttpClient client = new HttpClient();
+                                var result = await client.PostAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/agregarVentaRapida.php", content);
 
-                        if (result.StatusCode == HttpStatusCode.OK)
-                        {
-                            await DisplayAlert("ENVIADO", "Se guardo correctamente", "OK");
-                            await Navigation.PopAsync();
+                                if (result.StatusCode == HttpStatusCode.OK)
+                                {
+                                    await DisplayAlert("ENVIADO", "Se guardo correctamente", "OK");
+                                    await Navigation.PopAsync();
+                                }
+                                else
+                                {
+                                    await DisplayAlert("ERROR", "Algo salio mal intente nuevamente", "OK");
+                                    await Navigation.PopAsync();
+                                }
+                            }
+                            catch (Exception err)
+                            {
+                                await DisplayAlert("ERROR", "Algo salio mal intente nuevamente", "OK");
+                            }
                         }
                         else
                         {
-                            await DisplayAlert("ERROR", result.StatusCode.ToString(), "OK");
-                            await Navigation.PopAsync();
+                            await DisplayAlert("ERROR", "El campo de Monto esta vacio", "OK");
                         }
                     }
-                    catch(Exception err)
+                    else
                     {
-                        await DisplayAlert("ERROR", err.ToString(), "OK");
+                        await DisplayAlert("ERROR", "El campo de cantidad esta vacio", "OK");
                     }
                 }
                 else
                 {
-                    await DisplayAlert("ERROR", "El campo de Monto esta vacio", "OK");
+                    await DisplayAlert("ERROR", "El campo de Producto esta vacio", "OK");
                 }
             }
             else

@@ -15,7 +15,7 @@
                 </StackLayout>
                 <StackLayout>
                     <Label Text="Cantidad: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
-                    <Entry x:Name="txtCantidad" Text="1" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Cantidad..." Keyboard="Numeric"/>
+                    <Entry x:Name="txtCantidad"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" Placeholder="Cantidad..." Keyboard="Numeric"/>
                 </StackLayout>
                 <StackLayout>
                     <Label Text="Producto: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>

@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Padding="10">
             <StackLayout>
-                <Label x:Name="txtid" Text="id" IsVisible="False"/>
+                <Label x:Name="txtid" Text="id" />
                 <Label Text="Fecha: " TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
                 <DatePicker x:Name="pickFecha" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </StackLayout>

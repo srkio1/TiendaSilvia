@@ -37,7 +37,7 @@ namespace TiendaSilvia.VentaRapida
         }
         public async void ObtenerLista()
         {
-            txtFecha.Text = ofecha.Date.ToString("dd/MM/yyy");
+            txtFecha.Text = ofecha.Date.ToString("MM/dd/yyy");
             HttpClient client = new HttpClient();
             var url_tienda = new Uri("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
             string result = await client.GetStringAsync(url_tienda);
@@ -52,8 +52,7 @@ namespace TiendaSilvia.VentaRapida
                         id_venta_rapida = item.id_venta_rapida,
                         fecha = item.fecha,
                         producto = item.producto,
-                        cantidad = item.cantidad,
-                        detalle_cantidad = item.detalle_cantidad,
+                        cantidad = item.cantidad,                       
                         monto = item.monto
                     });
                 }
@@ -101,7 +100,7 @@ namespace TiendaSilvia.VentaRapida
             ventas_rapidas.Clear();
             ObtenerLista();
             var pasardatos = e.Item as venta_rapida;
-            listVentaRapida.SelectedItem = Navigation.PushAsync(new Editarventa(pasardatos.id_venta_rapida, pasardatos.fecha, pasardatos.cantidad, pasardatos.detalle_cantidad, pasardatos.monto, pasardatos.producto));
+            listVentaRapida.SelectedItem = Navigation.PushAsync(new Editarventa(pasardatos.id_venta_rapida, pasardatos.fecha, pasardatos.cantidad, pasardatos.monto, pasardatos.producto));
         }
     }
 }

@@ -27,12 +27,18 @@ namespace TiendaSilvia.VentaRapida
 			InitializeComponent ();
             fechaActual = DateTime.Today.ToString("dd/MM/yyy");
             txtFecha.Text = fechaActual;
-            ObtenerTotal();
-            ObtenerLista();
+            
         }
         private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ListaFecha());
+        }
+        protected override void OnAppearing()
+        {
+            ventas_rapidas.Clear();
+            TotalDiario = 0;
+            ObtenerTotal();
+            ObtenerLista();
         }
 
         public async void ObtenerLista()
@@ -48,10 +54,11 @@ namespace TiendaSilvia.VentaRapida
                 {
                     ventas_rapidas.Add(new venta_rapida
                     {
+                        id_venta_rapida=item.id_venta_rapida,
                         fecha = item.fecha,
                         producto = item.producto,
                         cantidad = item.cantidad,
-                        detalle_cantidad = item.detalle_cantidad,
+                       
                         monto = item.monto
                     });
                 }
@@ -82,13 +89,12 @@ namespace TiendaSilvia.VentaRapida
                 await DisplayAlert("ERROR", erro.ToString(), "OK");
             }
         }
-        private void ListVentaRapida_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void ListVentaRapida_ItemTapped_1(object sender, ItemTappedEventArgs e)
         {
             ventas_rapidas.Clear();
             ObtenerLista();
             var pasardatos = e.Item as venta_rapida;
-            listVentaRapida.SelectedItem = Navigation.PushAsync(new Editarventa(pasardatos.id_venta_rapida, pasardatos.fecha, pasardatos.cantidad, pasardatos.detalle_cantidad, pasardatos.monto, pasardatos.producto));
+            listVentaRapida.SelectedItem = Navigation.PushAsync(new Editarventa(pasardatos.id_venta_rapida, pasardatos.fecha, pasardatos.cantidad,  pasardatos.monto, pasardatos.producto));
         }
-
     }
 }
