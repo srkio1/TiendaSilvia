@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using TiendaSilvia.VentaRapida;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,7 +12,7 @@ namespace TiendaSilvia
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new IndexVentaRapida());
         }
 
         protected override void OnStart()
