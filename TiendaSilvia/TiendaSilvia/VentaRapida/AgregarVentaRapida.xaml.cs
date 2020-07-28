@@ -43,7 +43,7 @@ namespace TiendaSilvia.VentaRapida
                                 var json = JsonConvert.SerializeObject(venta_);
                                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                                 HttpClient client = new HttpClient();
-                                var result = await client.PostAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/agregarVentaRapida.php", content);
+                                var result = await client.PostAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/agregarVentaRapida.php", content);
 
                                 if (result.StatusCode == HttpStatusCode.OK)
                                 {

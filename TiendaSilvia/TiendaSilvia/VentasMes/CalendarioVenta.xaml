@@ -554,7 +554,7 @@
                             <Label FontSize="12" x:Name="txtmar23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="1" Grid.Row="4">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtmar24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="2" Grid.Row="4">
@@ -755,7 +755,7 @@
                             <Label FontSize="12" x:Name="txtabril23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="4" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtabril24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="5" Grid.Row="3">
@@ -1149,7 +1149,7 @@
                             <Label FontSize="12" x:Name="txtJunio23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="2" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtJunio24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="3" Grid.Row="3">
@@ -1358,7 +1358,7 @@
                             <Label FontSize="12" x:Name="txtjulio23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="4" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtjulio24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="5" Grid.Row="3">
@@ -1764,7 +1764,7 @@
                             <Label FontSize="12" x:Name="txtSep23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="3" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtSep24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="4" Grid.Row="3">
@@ -1973,7 +1973,7 @@
                             <Label FontSize="12" x:Name="txtOct23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="5" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtOct24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="6" Grid.Row="3">
@@ -2186,7 +2186,7 @@
                             <Label FontSize="12" x:Name="txtNov23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="1" Grid.Row="4">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtNov24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="2" Grid.Row="4">
@@ -2375,7 +2375,7 @@
                             <Label FontSize="12" x:Name="txtDic23" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="3" Grid.Row="3">
-                            <Label Text="23" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
+                            <Label Text="24" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" HorizontalTextAlignment="Start" Margin="1"></Label>
                             <Label FontSize="12" x:Name="txtDic24" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="1"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White" Grid.Column="4" Grid.Row="3">

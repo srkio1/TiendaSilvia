@@ -40,7 +40,7 @@ namespace TiendaSilvia.VentaRapida
             var json = JsonConvert.SerializeObject(Venta_rapida);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             HttpClient client = new HttpClient();
-            var result = await client.PostAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/borrarVentaRapida.php", content);
+            var result = await client.PostAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/borrarVentaRapida.php", content);
 
             if (result.StatusCode == HttpStatusCode.OK)
             {
@@ -83,7 +83,7 @@ namespace TiendaSilvia.VentaRapida
 
                                     HttpClient client = new HttpClient();
 
-                                    var result = await client.PostAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/editarVentaRapida.php", content);
+                                    var result = await client.PostAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/editarVentaRapida.php", content);
 
                                     if (result.StatusCode == HttpStatusCode.OK)
                                     {

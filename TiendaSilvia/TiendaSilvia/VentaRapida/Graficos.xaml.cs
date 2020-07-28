@@ -70,7 +70,7 @@ namespace TiendaSilvia.VentaRapida
                 DateTime Diciembre31 = Diciembre1.AddMonths(1).AddDays(-1).AddHours(22).AddMinutes(58);
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
 
                 foreach (var item in dataVR)

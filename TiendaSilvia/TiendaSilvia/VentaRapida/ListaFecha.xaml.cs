@@ -39,7 +39,7 @@ namespace TiendaSilvia.VentaRapida
         {
             txtFecha.Text = ofecha.Date.ToString("MM/dd/yyy");
             HttpClient client = new HttpClient();
-            var url_tienda = new Uri("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+            var url_tienda = new Uri("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
             string result = await client.GetStringAsync(url_tienda);
             var data = JsonConvert.DeserializeObject<List<venta_rapida>>(result);
 
@@ -66,7 +66,7 @@ namespace TiendaSilvia.VentaRapida
             try
             {
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var product = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 foreach (var item in product)
                 {

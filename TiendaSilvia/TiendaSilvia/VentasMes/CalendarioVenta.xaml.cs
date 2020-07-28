@@ -60,7 +60,7 @@ namespace TiendaSilvia.VentasMes
         public async void GetTotal2020()
         {
             HttpClient client = new HttpClient();
-            var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+            var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
             var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
 
             foreach(var item in dataVR)
@@ -78,7 +78,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaEnero = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //Mes de Enero
                 for (int iEne = 0; iEne <= 31; iEne++, valDiaEnero++)
@@ -142,7 +142,7 @@ namespace TiendaSilvia.VentasMes
                 DateTime fechaMesFebrero = new DateTime(2020, 2, 1);
                 int valDiaFebrero = 0;
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //Mes de Febrero
                 for (int iFeb = 0; iFeb <= 29; iFeb++, valDiaFebrero++)
@@ -208,7 +208,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaMarzo = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
 
                 //Mes Marzo
@@ -277,7 +277,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaAbril = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //Mes Abril            
                 for (int iAbril = 0; iAbril <= 30; iAbril++, valDiaAbril++)
@@ -344,7 +344,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaMayo = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //Mes Mayo
                 for (int iMayo = 0; iMayo <= 31; iMayo++, valDiaMayo++)
@@ -412,7 +412,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaJunio = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //Junio
                 for (int iJunio = 0; iJunio <= 30; iJunio++, valDiaJunio++)
@@ -479,7 +479,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaJulio = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes julio
                 for (int iJuilio = 0; iJuilio <= 31; iJuilio++, valDiaJulio++)
@@ -547,7 +547,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaAgosto = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes Agosto
                 for (int iAgosto = 0; iAgosto <= 31; iAgosto++, valDiaAgosto++)
@@ -614,7 +614,7 @@ namespace TiendaSilvia.VentasMes
                 DateTime fechaMesSeptiembre = new DateTime(2020, 9, 1);
                 int valDiaSeptiembre = 0;
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes septiembre.
                 for (int iSeptiembre = 0; iSeptiembre <= 30; iSeptiembre++, valDiaSeptiembre++)
@@ -680,7 +680,7 @@ namespace TiendaSilvia.VentasMes
                 DateTime fechaMesOctubre = new DateTime(2020, 10, 1);
                 int valDiaOctubre = 0;
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes octubre
                 for (int iOctubre = 0; iOctubre <= 31; iOctubre++, valDiaOctubre++)
@@ -748,7 +748,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaNoviembre = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes Noviembre
                 for (int iNoviembre = 0; iNoviembre <= 30; iNoviembre++, valDiaNoviembre++)
@@ -815,7 +815,7 @@ namespace TiendaSilvia.VentasMes
                 int valDiaDiciembre = 0;
 
                 HttpClient client = new HttpClient();
-                var response = await client.GetStringAsync("http://dmrbolivia.online/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
+                var response = await client.GetStringAsync("http://dmrbolivia.com/api_tienda_silvia/VentaRapida/listaVentaRapida.php");
                 var dataVR = JsonConvert.DeserializeObject<List<venta_rapida>>(response);
                 //mes Diciembre
                 for (int iDiciembre = 0; iDiciembre <= 31; iDiciembre++, valDiaDiciembre++)
